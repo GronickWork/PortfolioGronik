@@ -5,7 +5,7 @@
 
 ## Портфолио и сертификаты
 
-Все мои работы и сертификаты Вы увидите в моем [портфолио](https://gronik4.github.io/GronikPortfolio/) 
+Все мои работы и сертификаты Вы увидите в моем [портфолио]( https://gronickwork.github.io/PortfolioGronik/) 
 
 ## Контакты
 Со мной можно связаться по почте: gronweb@yandex.ru  
