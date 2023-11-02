@@ -45,11 +45,14 @@
     </div>
     <main class="main">
         <div class="greeting">
-            <div class="greet_photo"><img src="image/myPhoto2.jpg" alt="фото автора"></div>
+            <div class="greet_photo"><img src="image/myf.png" alt="фото автора"></div>
             <div class="greet_content">
-                <h2>Выполняю адаптивную верстку сайтов по макетам из Figma и Photopea</h2>
-                <p>Здравствуйте! Меня зовут Олег Гречишников. Я веб-разработчик из Нижнего Новгорода.
-                     Моя специализация: адаптивная верстка сайтов.</p>
+                <h2>Выполняю:</h2>
+                <h3> - адаптивную верстку сайтов по макетам из Figma и Photopea</h3>
+                <h3> - разработку web-приложений на React и Laravel</h3>
+                <p></p>
+                <p>Здравствуйте! Меня зовут Олег Гречишников. Я разработчик Web-приложений из Нижнего Новгорода.
+                     Моя специализация: разработка сайтов и Web-приложений.</p>
                 <p><a href="mailto:golegni@yandex.ru">golegni@yandex.ru</a></p>
             </div>
         </div>
@@ -58,9 +61,11 @@
             <h2 class="port_head">Портфолио</h2>
             <ul class="port_label" id="portUl">
                 <li class="label_item"><a href="https://cocky-nightingale-31f817.netlify.app" target="_blank"><img src="image/stepikOrg.png" alt="лейбл сайта stepikOrg"></a></li>
-                <li class="label_item"><a href="https://midldt.ru" target="_blank"><img src="image/midldt.png" alt="лейбл сайта midldt"></a></li>
                 <li class="label_item"><a href="https://gronickwork.github.io/nyadaptive/" target="_blank"><img src="image/netologi.png" alt="лейбл сайта от Нетология"></a></li>
-                <li class="label_item" id="startpro" name="startpro" hidden><a href="https://gronickwork.github.io/netinprogram/" target="_blank"><img src="image\StartProg.png" alt="лейбл курсовой работы по курсу введение в программирование"></a></li>
+                <li class="label_item"><a href="https://gronickwork.github.io/netinprogram/" target="_blank"><img src="image\StartProg.png" alt="лейбл курсовой работы по курсу введение в программирование"></a></li>
+                <li class="label_item" id="gg" name="gg" hidden><a href="https://gronik4.github.io/Gronik4-adjsbh-N2-gobling-yarn/" target="_blank"><img src="image\gg.png" alt="одно из домашних заданий"></a></li>
+                <li class="label_item" id="wc" name="wc" hidden><a href="https://gronik4.github.io/react6.1httpw.c/" target="_blank"><img src="image\wc.png" alt="одно из домашних заданий"></a></li>
+                <li class="label_item" id="dip" name="dip" hidden><a href="https://github.com/Gronik4/WebDevDiplomaV1" target="_blank"><img src="image\dip.png" alt="Дипломная работа"></a></li>
             </ul>
             <button class="portfo_butt" id="portbut">Все проекты</button> 
         </div> 
@@ -69,9 +74,7 @@
             <div class="serv_head"><h2>Услуги</h2></div>
             <div class="serv_content">
                 <p class="serv_content_item">Адаптивная верстка по макетам из Figma и psd файлам</p>
-                <p class="serv_content_item">Несложные JS скрипты</p>
-                <p class="serv_content_item">Несложные php скрипты</p>
-                <p class="serv_content_item">SQL запросы</p>
+                <p class="serv_content_item">Разработка Web-приложений на React и Laravel</p>
             </div>
         </div> 
         <div class="line"  id="sert"></div>
@@ -103,6 +106,13 @@
                     <p id="netprog"name="netprog">Основы программирования</p>
                     <p id="netgit"name="netgit">Git - Система контроля версий</p>
                     <p id="netbjs"name="netbjs">Основы JavaScript</p>
+                    <p id="netbjs"name="netbjs">Продвинутый JavaScript</p>
+                    <p id="netbjs"name="netbjs">Продвинутый JavaScript в браузере</p>
+                    <p id="netbjs"name="netbjs">React</p>
+                    <p id="netbjs"name="netbjs">PHP</p>
+                    <p id="netbjs"name="netbjs">Продвинутый PHP</p>
+                    <p id="netbjs"name="netbjs">Laravel</p>
+                    <p id="netbjs"name="netbjs">Диплом о профессиональной переподготовке</p>
                 </div>
             </div>
         </div>    
@@ -190,12 +200,14 @@
     const certnames = certificates.querySelectorAll('p[name]');
     for(let certname of certnames){ 
         certname.addEventListener('click', function(){
-            let allimgurl = new Map([['sohtml', ' url("sertificates/sololearnHTML.png")'], ['socss', ' url("sertificates/sololearnCSS.png")'],
+            let allimgurl = new Map([
+                ['sohtml', ' url("sertificates/sololearnHTML.png")'], ['socss', ' url("sertificates/sololearnCSS.png")'],
                 ['sojs', ' url("sertificates/sololearnJS.png")'], ['sophp', ' url("sertificates/sololearnPHP.png")'],
                 ['sosql', ' url("sertificates/sololearnSQL.png")'], ['stepik', ' url("sertificates/stehik.png")'],
                 ['nethtml', ' url("sertificates/html-layout.png")'], ['netadapt', ' url("sertificates/netologi-adaptive.png")'],
                 ['netprog', ' url("sertificates/hetologi bazis program.png")'], ['netgit', 'url("sertificates/netology-git.png")'], 
-                ['netbjs', ' url("sertificates/basis JS.png")']]);
+                ['netbjs', ' url("sertificates/basis JS.png")'],
+            ]);
             let namecert = certname.getAttribute('name');
             let imgurl = allimgurl.get(namecert);
             serimage.style.backgroundImage = imgurl;
