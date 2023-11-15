@@ -65,10 +65,10 @@ body {
     .show_sertificate {
         display: none;
         position: fixed;
-        width: 50vw;
+        width: 54vw;
         height: 40vw;
         top: 1vw;
-        left: 25vw;
+        left: 15vw;
         background-color: #fff;
         z-index: 20;
     }

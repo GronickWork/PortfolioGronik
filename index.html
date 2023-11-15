@@ -106,13 +106,14 @@
                     <p id="netprog"name="netprog">Основы программирования</p>
                     <p id="netgit"name="netgit">Git - Система контроля версий</p>
                     <p id="netbjs"name="netbjs">Основы JavaScript</p>
-                    <p id="netbjs"name="netbjs">Продвинутый JavaScript</p>
-                    <p id="netbjs"name="netbjs">Продвинутый JavaScript в браузере</p>
-                    <p id="netbjs"name="netbjs">React</p>
-                    <p id="netbjs"name="netbjs">PHP</p>
-                    <p id="netbjs"name="netbjs">Продвинутый PHP</p>
-                    <p id="netbjs"name="netbjs">Laravel</p>
-                    <p id="netbjs"name="netbjs">Диплом о профессиональной переподготовке</p>
+                    <p id="netBjsB" name="netBjsB">Основы JavaScript в браузере</p>
+                    <p id="netAjs" name="netAjs">Прдвинутый JavaScript</p>
+                    <p id="netAjsB" name="netAjsB">Прдвинутый JavaScript в браузере</p>
+                    <p id="react" name="react">React</p>
+                    <p id="bphp" name="bphp">Основы PHP</p>
+                    <p id="aphp" name="aphp">Продвинутый PHP</p>
+                    <p id="laravel" name="laravel">LARAVEL</p>
+                    <p id="diplom" name="diplom">Диплом за курс "Web-разработчик с нуля"</p>
                 </div>
             </div>
         </div>    
@@ -149,75 +150,6 @@
         <h4 class="dizaine">Дизайнер сайта: <a href="https://www.behance.net/buyanova" target="_blank"> Evgeniya Buyanova</a></h4>
     </footer>
     <div class="button_top" id="buttTop" hidden><a href="#top" class="but_top"></a></div>
-<script> 
-    let onTop = document.getElementById('top');
-    buttTop.addEventListener('click', function(e) {//Плавная прокрутка наверх
-        e.preventDefault();
-        onTop.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'});
-    })
-
-    window.addEventListener('scroll', function() {//Появление/пропадание кнопки "Наверх"
-        buttTop.hidden=(pageYOffset<
-      document.documentElement.clientHeight / 2);
-      });
-
-      //через if почему-то пишет, что anchor не определен.....
-      const anchors = getComputedStyle(sandwich).display === 'none' ? navUl.querySelectorAll('a[href*="#"]'): navUlm.querySelectorAll('a[href*="#"]');
-    for(let anchor of anchors){
-            anchor.addEventListener('click', function(e){//Плавная прокрутка по клику на ссылки в навигации хейдера
-            const namesId = anchor.getAttribute('href').substr(1);
-            let idName=document.getElementById(namesId);
-            e.preventDefault();
-            if(getComputedStyle(sandwich).display === 'block') {hiddenShow ();}
-            idName.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'});
-            });
-    }
-    sandwich.addEventListener('click', hiddenShow);//Скыть/показать мобильную панель навигации
-
-    function hiddenShow () {
-        if(getComputedStyle(showMenu).display =='none') {showMenu.style.display = 'block';}
-            else{showMenu.style.display = 'none';}
-    }
-
-    portbut.addEventListener('click', function() {//Кнопка скрыть/показать
-        let names = portUl.querySelectorAll('li[name]');
-        for(let name of names){
-            let idName= name.getAttribute('name');
-            let idN = document.getElementById(idName);
-            if(idN.hasAttribute('hidden', 'hidden')){
-                idN.removeAttribute('hidden');
-                portbut.innerHTML = 'Скрыть';
-            }else{
-                idN.setAttribute('hidden', 'hidden');
-                portbut.innerHTML = 'Все проекты';
-            }
-        }
-    })
-    const certnames = certificates.querySelectorAll('p[name]');
-    for(let certname of certnames){ 
-        certname.addEventListener('click', function(){
-            let allimgurl = new Map([
-                ['sohtml', ' url("sertificates/sololearnHTML.png")'], ['socss', ' url("sertificates/sololearnCSS.png")'],
-                ['sojs', ' url("sertificates/sololearnJS.png")'], ['sophp', ' url("sertificates/sololearnPHP.png")'],
-                ['sosql', ' url("sertificates/sololearnSQL.png")'], ['stepik', ' url("sertificates/stehik.png")'],
-                ['nethtml', ' url("sertificates/html-layout.png")'], ['netadapt', ' url("sertificates/netologi-adaptive.png")'],
-                ['netprog', ' url("sertificates/hetologi bazis program.png")'], ['netgit', 'url("sertificates/netology-git.png")'], 
-                ['netbjs', ' url("sertificates/basis JS.png")'],
-            ]);
-            let namecert = certname.getAttribute('name');
-            let imgurl = allimgurl.get(namecert);
-            serimage.style.backgroundImage = imgurl;
-            showS.style.display = 'block';
-        })
-    }
-
-    hiddButt.addEventListener('click', function() {
-        if(getComputedStyle(showS).display=='block'){showS.style.display='none';}
-    })
-</script>
+<script src="index.js"></script>
 </body>
 </html>
