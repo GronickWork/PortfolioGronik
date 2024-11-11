@@ -5,10 +5,11 @@
 
 ## Портфолио и сертификаты
 
-Все мои работы и сертификаты Вы увидите в моем  [здесь]( https://gronickwork.github.io/PortfolioGronik/) 
+Все мои работы и сертификаты Вы увидите [здесь]( https://gronickwork.github.io/PortfolioGronik/)  
+Все учебные работы [здесь](https://github.com/Gronik4?tab=repositories)
 
 ## Контакты
-Со мной можно связаться по почте: gronweb@yandex.ru  
+Со мной можно связаться по почте: gronweb@yandex.ru и golegni@yandex.ru  
 по телефону: +7 906 364 30 28  
 или в соцсетях: 
 [![телеграмм](svg/forReadme/telegramR.svg)](https://t.me/Gronik3) | [![WyatsApp](svg/forReadme/whatsAppR.svg)](https://wa.me/9063643028) | [![skype](svg/forReadme/skypeR.svg)](https://join.skype.com/invite/B1KnlscmJbFp) | [![Однокласники](svg/forReadme/OdnoklassnikiR.svg)](https://ok.ru/oleg.grechishnikov) | [![Вконтакте](svg/forReadme/VK.comR.svg)](https://vk.com/id135137484)
