@@ -7,7 +7,7 @@ let onTop = document.getElementById('top');
     })
 
     window.addEventListener('scroll', function() {//Появление/пропадание кнопки "Наверх"
-        buttTop.hidden=(pageYOffset<
+        buttTop.hidden=(scrollY <
       document.documentElement.clientHeight / 2);
       });
 
