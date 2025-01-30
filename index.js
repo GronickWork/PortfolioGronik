@@ -4,8 +4,21 @@ let onTop = document.getElementById('top');
         onTop.scrollIntoView({
             behavior: 'smooth',
             block: 'start'});
-    })
+    });
 
+const reviews = document.querySelectorAll('.rev_content_item');
+reviews.forEach((review) => {
+    review.addEventListener('click', (e) => {
+        const tgEl = e.target;
+        if(tgEl.dataset.size === 'sm') {
+            tgEl.dataset.size = 'lg';
+            tgEl.style.width = '70%';
+        } else {
+            tgEl.dataset.size = 'sm';
+            tgEl.style.width = '';
+        }
+    });
+})
     window.addEventListener('scroll', function() {//Появление/пропадание кнопки "Наверх"
         buttTop.hidden=(scrollY <
       document.documentElement.clientHeight / 2);

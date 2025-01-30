@@ -144,13 +144,17 @@ body {
                 .serv_head { font-size: 1.3rem; text-transform: uppercase; font-family: Rubik;}
                 .serv_content {width: 32.7rem;}
                 .serv_content_item {font-size: 1.1rem; margin: 0 auto 2.5rem;}
-            .certificates {width: 100%; margin: 3rem auto 2rem;}
-                .cert_head {
+            .certificates, .reviews {width: 100%; margin: 3rem auto 2rem;}
+                .rev_content {text-align: right;}
+                    .rev_content_item img {width: 20vw;}
+                    .rev_content_item img:hover {cursor: pointer; border: 2px solid #dade1eff;}
+                .cert_head, .rev_head {
+                    width: max-content;
                     font-size: 1.3rem; 
                     text-transform: uppercase; 
                     font-family: Rubik;
                     font-weight: 900;
-                    margin-bottom: 3rem;
+                    margin: 0 auto 3rem;
                 }
                 .same {
                     width: 100%; 
@@ -158,12 +162,13 @@ body {
                     flex-wrap: wrap;
                     justify-content: space-between;
                     margin: 3rem auto 2rem;
+                    align-items: center;
                 }
                     .same_head {width: 11rem; font-size: 1.3rem;}
-                    .same_cont {font-size: 1.1rem; width: 27rem;}
+                    .same_cont {font-size: 1.1rem; text-align: right;}
                         .same_cont p {margin-bottom: 1.5rem;}
                         .hr {height: 2px; background-color: #fff; color: #fff;}
-                        .same_cont p:hover {outline: 1px solid #dade1eff; cursor: pointer; color: #dade1eff;}
+                        .same_cont p:hover {color: #dade1eff; cursor: pointer; text-decoration: underline;}
     .footer {max-width: 100vw; margin: auto; background-color: #252525; padding: 1rem 0;}
         .footer_mail { width: 29.2rem; margin: auto; font-size: 2.875rem;}
             .footer_mail a {text-decoration: none; color: #fff;}
@@ -248,8 +253,8 @@ body {
     .main {max-width: 100vw;}
             .port_head{width: 18.2rem;}
         .services {width: 95vw; text-align: center;}
-            .cert_head{width: 10rem; margin: auto;}
-        .certificates {width: 90%;}
+            .cert_head, .rev_head {width: 15rem; margin: auto;}
+        .certificates, .reviews {width: 90%;}
 }
 @media (max-width: 730px) {
         .serv_head {width: 9rem; margin: 0 auto 1rem;}
